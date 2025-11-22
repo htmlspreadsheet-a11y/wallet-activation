@@ -1,0 +1,123 @@
+:root{
+  --bg:#003b7a;
+  --card:#ffffff;
+  --muted:#666666;
+  --accent-grey:#7f8c8d; /* submit button grey */
+}
+
+* { box-sizing: border-box; }
+
+html,body{
+  height:100%;
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:white;
+}
+
+.page{
+  max-width:420px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+/* Top section */
+.top-section{
+  text-align:center;
+  padding:28px 18px 18px;
+}
+
+.hero-img img{
+  width:100%;
+  max-height:160px;
+  object-fit:cover;
+  border-radius:12px;
+  display:block;
+  margin:0 auto 14px;
+}
+
+/* Title: WHITE and BOLD per request */
+.title{
+  margin:0;
+  font-size:20px;
+  font-weight:800; /* bold */
+  color:#ffffff;   /* white */
+  letter-spacing:0.6px;
+}
+
+/* subtitle text */
+.subtitle{
+  margin:10px auto 0;
+  font-size:14px;
+  max-width:360px;
+  color:rgba(255,255,255,0.92);
+  line-height:1.45;
+}
+
+/* card-like form container */
+.form-container{
+  background:var(--card);
+  color:#111;
+  padding:26px;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  margin-top:18px;
+  box-shadow:0 -6px 18px rgba(0,0,0,0.2);
+}
+
+/* elements inside the card */
+label {
+  display:block;
+  font-weight:600;
+  margin-bottom:8px;
+}
+
+input[type="tel"]{
+  width:100%;
+  padding:14px;
+  font-size:16px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  margin-bottom:18px;
+}
+
+/* Submit button: GREY as requested */
+#submitBtn{
+  width:100%;
+  padding:14px;
+  font-size:16px;
+  font-weight:700;
+  background:var(--accent-grey); /* grey */
+  color:white;
+  border:none;
+  border-radius:40px;
+  cursor:pointer;
+  transition:transform 120ms ease, box-shadow 120ms;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+#submitBtn:active{ transform: translateY(1px); }
+
+.note{
+  margin-top:14px;
+  color:#888;
+  font-size:13px;
+  text-align:center;
+}
+
+/* status message area */
+.status{
+  margin-top:10px;
+  text-align:center;
+  font-size:13px;
+  color:#2d6a4f;
+}
+
+/* small screens */
+@media (max-width:420px){
+  .page{ padding-bottom:20px; }
+  .top-section{ padding:20px 14px 12px; }
+  .form-container{ padding:20px; }
+}
